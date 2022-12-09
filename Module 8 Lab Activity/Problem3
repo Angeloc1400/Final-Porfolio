@@ -1,0 +1,14 @@
+#Angel Ocampo
+#November 30, 2022
+#program prints list if there is a number 5 in your list
+
+num1=int(input("Give me 5 numbers from 0-10"))
+num2=int(input())
+num3=int(input())
+num4=int(input())
+num5=int(input())
+
+mylist=(num1,num2,num3,num4,num5)
+if 5 in mylist:
+    print(mylist)
+    print("5 is in your list")
