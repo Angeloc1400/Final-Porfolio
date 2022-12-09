@@ -1,0 +1,43 @@
+#Angel Ocampo
+#November 5, 2022
+#This program will lead the third section of the game
+#The 3rd part of the story is given and the player will be allowed to choose an option
+
+#imported files
+import Main_character
+import section4
+
+
+
+#Start of section 3 with def
+def start():
+
+    #Just game text
+    print("", Main_character.character.name ," now has keys on him but he does not know what it could be for.")
+    print("Theres a recorder on the desk that contains a weird repeated message on it")
+#loop statement which prints text 20 times
+    for i in range(20):
+        print("Run, you are in danger, this place is not safe.")
+#To continue text and game
+    next=input("Press 'c' to continue")
+#choices
+    if next=="c":
+        print("", Main_character.character.name ," gets back to the part of the cave where there was 3 different paths")
+        print("", Main_character.character.name ," now has 2 different paths to choose from.")
+        print("Which path will he take? \n \n")
+
+
+        print("1.He chooses the path with a light source at the end of it.")
+        print("2.He chooses the path that looks very deep.")
+
+        # outcomes after choice choosen
+        choice3=int(input())
+        #Choices
+        if choice3==1:
+            print("He chooses the path with a light source and finds a locked gate")
+        elif choice3==2:
+            print("He chooses the dark path but he finds himself at a dead end, he hears something right behind him, you are now cornered.\n Game Over")
+#Continue to section 4 if right choice is choosen.
+        if choice3==1:
+            section4.start()
+#Need to make my secion to continue on after section 3 is done to section 4
