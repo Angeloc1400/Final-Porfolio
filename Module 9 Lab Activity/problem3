@@ -1,0 +1,9 @@
+#Angel Ocampo
+#December 8,2022
+#Program will ask user a number in which will be added until the number total excedes 100
+
+total = 0
+while total<=99:
+    number = int((input("Give me a number to add")))
+    total = total + number
+    print('The sum is', total)
