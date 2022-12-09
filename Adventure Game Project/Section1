@@ -1,0 +1,42 @@
+# Angel Ocampo
+# November 5, 2022
+# This program will lead the first section of the game
+# The first part of the story is given and the player will be allowed to choose an option
+
+#imported sections
+import Main_character
+import section2
+
+
+# Text for the user
+#Will start next section with def.
+def start():
+    print("As ", Main_character.character.name ," is looking around the cave, he hears some rocks shift behind him which causes him to")
+    print("panic and run deeper into the cave. He runs in too deep and gets completely lost not knowing ")
+    print("what made the noise. ")
+
+    print("What do you choose to do?")
+#user choices
+    print("1.Walk back same direction where ran from")
+    print("2.Keep on walking the same direction")
+    print("3.Stay and sit down for a bit until he is able to calm down")
+#input
+    choice1 = int(input())
+
+# The user choices
+    if choice1 == 1:
+        print(
+            "You walked back to the same direction you came from, you figure out what was following you, and you wished you didn't as that will be your last thought.\n Game Over")
+    elif choice1 == 2:
+        print("Your gut tells you the best choice would be to continue the path you were taking, so you keep going. ")
+    elif choice1 == 3:
+        print("You choose to wait it out but quickly feel a heavy breath right on your neck. \n Game Over")
+#  (NOT WORKING)Main_character.character.damagetaken()
+#NOT WORKING CODE/ could not impliment lives into my code
+#    if Main_character.character.lives > 0:
+ #       section2.start()
+  #  else:
+   #     print("Game over")
+#nect section
+    if choice1==2:
+        section2.start()
