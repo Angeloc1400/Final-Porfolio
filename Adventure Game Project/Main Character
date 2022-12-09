@@ -1,0 +1,37 @@
+#Angel Ocampo
+#November 6,2022
+#This program controls and keeps track of any inventory and lives the user is  going to have throughout the game
+#This program keeps track of anything with the character.
+
+#Class function on cheracter
+class character:
+    name="Alexis"
+    inventory=0
+    points=0
+    lives = 3
+
+#tried implementing lives into game
+    def damagetaken(self):
+        lives=3
+        self.lives -= 1
+        print("You got slashed by the creature \nYou know have ",lives," lives left.")
+        return lives
+
+
+
+#def extrapoints(points):
+#    points=0
+ #   points==points+100
+  #  print("You Know have",points,", goodjob!")
+   # return points
+
+
+
+
+
+
+    #define your variables here
+#Name would be the characters name
+#Lives would be the amount of times he gets to pick the wrong choixes and continue with the game
+#If lives run out he will need to restart the game from the beginning
+#inventory is anything he carries on him counts towards his inverntory for example the keys he finds.
