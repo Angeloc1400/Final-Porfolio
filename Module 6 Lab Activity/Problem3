@@ -1,0 +1,7 @@
+#Angel Ocampo
+#November 8, 2022
+#This program prints a random day out of the week
+
+import random
+day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+print(random.choice(day))
