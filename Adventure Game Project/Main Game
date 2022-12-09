@@ -1,0 +1,39 @@
+#Angel Ocampo
+#November 6, 2022
+#This is the main program that the game will run on.
+#In this program everything that is needed to run the game will be throughout this program
+
+
+#Imported files
+import Main_character
+import section1
+import section2
+import section3
+import section4
+import section5
+
+#Intro text to the user
+#The empty input functions are only here so the player has to type something to move on
+#(like pressing a button in a video game to move the dialogue along)
+print("The Mining Cave")
+#Continues the game when c is pressed and entered
+print("Type c to start ")
+next=input()
+if next=="c":
+    print("Welcome to The Mining Cave")
+    print("It is a summer night in 1995,", Main_character.character.name ,"decides to explore a cave he finds after going")
+    print("on a hike. Theres a sign next to the cave, it says \n \n DANGER \n Do not enter \n ")
+    print("Although ", Main_character.character.name ," read the sign he still decided to enter the dark cave with a simple flashlight and some hiking gear.")
+    print("Due to the lack of gear he gets lost in the cave.")
+    print("Your objective is to get ", Main_character.character.name ," out to safety before anything lurking in the cave finds him first.")
+
+#Press c and enter to continue to next section
+next2=input(print("\n \nIf you're ready to continue press 'c'  \n"))
+if next2=="c":
+    section1.start()
+#calling my first section
+
+
+# I would like to make the user have to continue pressing "c" in order to continue text
+#Main thing I need is to make my programs connect to one another zfter they are done so it could continue to the next
+#Cannot fix error
