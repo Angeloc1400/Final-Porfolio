@@ -1,0 +1,7 @@
+#Angel Ocampo
+#November 8, 2022
+#This program prints 10 random numbers between 25 and 26
+import random as rand
+
+for i in range(10):
+    print(rand.randrange(25,36))
