@@ -1,0 +1,12 @@
+#Angel Ocampo
+#November 16, 2022
+# Program will determine if number is between 1 and 10 which would mark as true and anything else would be false.
+import random
+def onethruten():
+    num=int(input("Pick a number"))
+    if num == range(1,10):
+        print("True")
+    else:
+        print("False")
+
+onethruten()
