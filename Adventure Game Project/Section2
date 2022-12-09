@@ -1,0 +1,44 @@
+#Angel Ocampo
+#November 5, 2022
+#This program will lead the second section of the game
+#The second part of the story is given and the player will be allowed to choose an option
+
+#imported sections
+import Main_character
+import section3
+import random
+
+
+#Section 2 start with def.
+def start():
+    print("You choose the right option to continue to walk as the other choices might have led to you encounter the creature")
+
+#situation
+    print("As ", Main_character.character.name ," continues this path he runs into a problem.")
+    print("There are 3 different paths he could take. ")
+    print("Which path will he take? \n \n")
+#random function to give useer a guess on which option they should pick.
+    print("Something tells you that you should pick option ", random.randint(1,3)," but you don't konw why would you follow it? ")
+
+
+#choices
+    print("1.He chooses the path with a light source at the end of it.")
+    print("2.He chooses the path that looks very deep.")
+    print("3.He chooses the path with a sign that says 'office' on it")
+#choice input
+    choice2=int(input())
+
+#Users choices
+    if choice2==1:
+        print("As you walked towards the light you see a locked gate with a tourch on the other side of it,\n but all of the sudden you hear heavy footsteps going straight towards you with no where to run or hide.\n Game Over")
+    elif choice2==2:
+        print("As you continue to walk on this dark path, you find out it's a death end, so you decide to turn around and walk back. \n But all of a sudden you run into something 3 times your size\n Game Over")
+ #NOT WORKING CODE       Main_character.damagetaken()
+    elif choice2==3:
+        print("As you continue to go on this path you find a open room and finds some keys in the room. \n Now you decide to go back to where the other paths are at")
+#On to the next section
+    if choice2==3:
+        section3.start()
+
+# Need to make my section to continue on after section 2 is done to section 3
+#Add some type of inventory
