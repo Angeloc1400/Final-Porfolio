@@ -3,10 +3,6 @@
 #This program will lead the 5th section of the game
 #The 5th part of the story is given and the player will be allowed to choose an option and win the game
 
-#Angel Ocampo
-#November 5, 2022
-#This program will lead the first section of the game
-#The first part of the story is given and the player will be allowed to choose an option
 
 #imported files
 import Main_character
