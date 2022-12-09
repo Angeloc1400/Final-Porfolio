@@ -1,0 +1,13 @@
+#Angel Ocampo
+#Nov 17, 2022
+#Multiply all of the 3 numbers of a list in which the user will input
+
+
+num1=int(input("Give me first number"))
+num2=int(input("give me the second number"))
+num3=int(input("give me the third number"))
+
+my_list= num1, num2, num3
+print(my_list)
+my_list=num1*num2*num3
+print("All of them together equals to", my_list)
