@@ -1,0 +1,12 @@
+#Angel Ocampo
+#November 30, 2022
+#Program will be able to tell if a year is a leap year which will come out as true if not then it'll false.
+
+year=int(input("give me a year"))
+
+Divide4=year%4
+print(Divide4)
+
+if Divide4==0:
+    print(True)
+else: print(False)
