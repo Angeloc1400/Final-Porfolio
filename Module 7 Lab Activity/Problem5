@@ -1,0 +1,43 @@
+#Angel Ocampo
+#Nov 17, 2022
+#Program will make squares around each square as the outer square gets bigger
+
+import turtle
+
+def drawsquare(t, sz):
+    for i in range(4):
+        turtle.color("blue")
+        (turtle.forward(sz))
+        (turtle.left(90))
+def squarereset (sz):
+    (turtle.penup())
+    (turtle.right(90))
+    (turtle.forward(5))
+    (turtle.right(90))
+    (turtle.forward(5))
+    (turtle.left(180))
+    (turtle.pendown())
+
+
+wn = turtle.Screen()
+
+
+
+drawsquare(0,10)
+squarereset(10)
+
+drawsquare(0,20)
+squarereset(20)
+
+drawsquare(0,30)
+squarereset(30)
+
+drawsquare(0,40)
+squarereset(40)
+
+
+drawsquare(0,50)
+squarereset(50)
+
+
+wn.exitonclick()
