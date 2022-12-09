@@ -1,0 +1,16 @@
+#Angel Ocampo
+#November 30, 2022
+#Program lets user input 2 numbers and will be added and them program will say if they are equal
+#more than, or less than 10.
+
+num1=int(input("give me your first number"))
+num2=int(input("give me your second number"))
+
+total=num1+num2
+
+if total==10:
+    print("Your number added is equal to 10")
+elif total>10:
+    print("Your combined numbers are more than 10")
+elif total<10:
+    print("Your combined numbers are less than 10")
