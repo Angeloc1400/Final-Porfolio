@@ -1,0 +1,11 @@
+#Angel Ocampo
+#December 8,2022
+#Loop will count from 0 to 50 and will add any number divisable by 10 into a list
+
+i=0
+list=i
+while i<50:
+    i+0
+if i%10:
+    i==list
+    print(list)
