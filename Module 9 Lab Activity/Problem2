@@ -1,0 +1,10 @@
+#Angel Ocampo
+#December 8,2022
+#Contains a list in which will be from 1-10 and it will print increase the counter by 1 and stop at 10
+
+L=0,1,2,3,4,5,6,7,8,9,10
+i = 0
+while i < 11:
+    print(i)
+    i += 1
+
