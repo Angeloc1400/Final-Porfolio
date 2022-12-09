@@ -1,0 +1,26 @@
+#Angel Ocampo
+#November 30, 2022
+#Program will check if character received all of the items to continue with the next task and checks any status debuffs
+
+class character:
+    def __init__(self, nickname, weapons, weaknesses):
+      self.nickname = nickname
+      self.weapons = weapons
+      self.weaknesses = weaknesses
+def get_model(self):
+    return self.nickname
+def get_year(self):
+    return self.weapons
+def get_color(self):
+    return self. weaknesses
+def profile(self):
+    return self.nickname, self.weapons, self. weaknesses
+item=( "needs_rope", "coat", "first_aid_kit")
+player1 = character('','','')
+player1.nickname = 'Dragon Slayer'
+player1.weapons = ['pan', 'paper', 'idea', 'rope', 'groceries']
+player1.weaknesses = ['slow']
+for item in player1.weapons:
+    print("Item: ", item)
+for debuff in player1.weaknesses:
+    print("Debuff: ", debuff)
