@@ -1,0 +1,11 @@
+#Angel Ocampo
+#November 8, 2022
+#This program lets the user choose its numbers for the pythagorean theorem equation
+import math
+print("here is the equation of pythagorean theorem c= √(a^2+b^2)")
+a=int(input("What number do you want A to represent "))
+b=int(input("What number do you want B to represent"))
+
+equation=math.sqrt(math.pow(a,2)+math.pow(b,2))
+
+print("Your pythagoream theorem is", equation)
