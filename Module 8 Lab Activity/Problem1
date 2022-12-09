@@ -1,0 +1,11 @@
+#Angel Ocampo
+#November 30, 2022
+#Program lets user put two numbers and determaine if the are equal or not.
+
+num1=int(input("give me a number"))
+num2=int(input("Give me another number"))
+
+if num1 == num2:
+    print("You're numbers are equal")
+else:
+    print("Your numbers are not equal")
