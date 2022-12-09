@@ -1,0 +1,6 @@
+#Angel Ocampo
+#November 8, 2022
+#The program picks a number between 1 and 100 but it skips over every 2nd number starting off at 0
+import random
+i=random.randrange(1,100,2)
+print(i)
