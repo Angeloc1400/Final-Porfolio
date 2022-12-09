@@ -1,0 +1,9 @@
+#Angel Ocampo
+#November 8, 2022
+#This program will print the area of a circle using math.pi
+
+import math
+
+radius=int(input("What is the radius of the circle?"))
+area= math.pi* radius**2
+print("The area of your circle is", area)
