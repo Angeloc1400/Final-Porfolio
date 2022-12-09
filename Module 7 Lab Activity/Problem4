@@ -1,0 +1,31 @@
+#Angel Ocampo
+#Nov 17, 2022
+#Function takes a list of numbers and returns the list in a unique element
+
+num1=int(input("give me 5 numbers"))
+num2=int(input())
+num3=int(input())
+num4=int(input())
+num5=int(input())
+def my_append(a_list, add_list):
+    for name in add_list:
+        a_list.append(name)
+    return a_list
+
+my_list = [num1]
+print(my_list)
+
+my_list.append(num2)
+print(my_list)
+
+my_list.append(num3)
+print(my_list)
+
+my_list.append(num4)
+print(my_list)
+
+my_list.append(num5)
+print(my_list)
+
+my_list=(my_list)
+print(my_list,"Good job on making these stairs!")
