@@ -1,0 +1,46 @@
+#Angel Ocampo
+#November 5, 2022
+#This program will lead the 4th section of the game
+#The 4th part of the story is given and the player will be allowed to choose a option
+
+#imported files
+import Main_character
+import section5
+
+#Start of section 4 with def
+def start():
+
+
+    print("", Main_character.character.name ," is able to unlock the gate with the key he found in the office.")
+#Need to press c to continue game
+    next=input("Press 'c' to continue")
+
+    if next=="c":
+
+#in game text
+        print("As he swings the gate open,")
+        print("There is something running full speed at him from the darkness")
+        print("What should he do? \n \n")
+
+#choices
+        print("1.Takes out a knife from his bookbag that he was carrying and slash it towards the darkness.")
+        print("2.Start running towards the new path")
+        print("3.Grabs the torch off the wall and holds it against the darkness")
+        print("4.He decides to try closing the gate on it")
+
+        choice4=int(input())
+#choices outcomes
+        if choice4==1:
+            print("As you slash the darkness in front of you, you feel you hit something and hear screeching, you decide to run as the creature is stunned.")
+        elif choice4==2:
+            print("The creature easily catches up to you and pulls you back into the darkness.\n Game Over")
+        elif choice4==3:
+            print("The creature seems to get scared of the light and backs off. This gives you time to start to run")
+        elif choice4==4:
+            print("You try to close the gate on it but the creature makes it on time before you lock it and gets throughout the gate with you\n Game Over")
+
+#set up to start section 5 if right choice is made.
+        if choice4 == 1 or 3:
+            section5.start()
+
+ #I want to cut the amount of choices that the user is able to choose from.
