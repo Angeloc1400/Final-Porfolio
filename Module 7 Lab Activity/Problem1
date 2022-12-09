@@ -1,0 +1,12 @@
+#Angel Ocampo
+#November 16, 2022
+#This program defines a function that will give the area of a circle in which the user till input the radius
+
+import math
+
+def area_of_circle():
+    radius=int(input("What is the radius of your circle \n"))
+    area= math.pi*(radius**2)
+    print("The area of your circle is: ", area)
+
+area_of_circle()
