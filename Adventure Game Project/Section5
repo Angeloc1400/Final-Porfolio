@@ -1,0 +1,42 @@
+#Angel Ocampo
+#November 5, 2022
+#This program will lead the 5th section of the game
+#The 5th part of the story is given and the player will be allowed to choose an option and win the game
+
+#Angel Ocampo
+#November 5, 2022
+#This program will lead the first section of the game
+#The first part of the story is given and the player will be allowed to choose an option
+
+#imported files
+import Main_character
+
+#start of section 5 with def
+def start():
+
+    print("", Main_character.character.name ," is able to stun the creature for a while and able to get some distance on it.")
+
+    next=input("Press 'c' to continue")
+#Press c to continue with game
+    if next=="c":
+
+
+#Game text
+        print("Although he has a lot of space between himself and the creature")
+        print("He could hear it catching up")
+        print("What should he do? \n \n")
+
+#user choices
+        print("1.You continue to run out the cave.")
+        print("2.You decide to hide in a nearby bush outside the cave.")
+        print("3.Hide between a crevice inside the cave.")
+
+        choice5=int(input())
+#outcome of choices with one choice being the way to win the game.
+        if choice5==1:
+            print("You had no chance out running the creature.\n Game Over")
+        elif choice5==2:
+            print("The creature sniff around and is able to find you inside the bush\n Game Over")
+        elif choice5==3:
+            print("You hide between the crevice \nThe creature keeps on running past you into the forest \nYou wait until its safe to go \nYou've escaped!")
+
