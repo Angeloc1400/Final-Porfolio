@@ -1,12 +1,17 @@
 #Angel Ocampo
 #November 5, 2022
 #This program will lead the 5th section of the game
-#The 5th part of the story is given and the player will be allowed to choose an option and win the game
-
+#The 5th part of the story is given and the player will be allowed to choose an option and can win the game
 
 #imported files
 import Main_character
 
+def restart():
+    endgame=input("Do you want to Restart? \n Y/N")
+    if endgame == "Y":
+        start()
+    else:
+        exit()
 #start of section 5 with def
 def start():
 
@@ -31,8 +36,10 @@ def start():
 #outcome of choices with one choice being the way to win the game.
         if choice5==1:
             print("You had no chance out running the creature.\n Game Over")
+            restart()
         elif choice5==2:
             print("The creature sniff around and is able to find you inside the bush\n Game Over")
+            restart()
         elif choice5==3:
             print("You hide between the crevice \nThe creature keeps on running past you into the forest \nYou wait until its safe to go \nYou've escaped!")
 
