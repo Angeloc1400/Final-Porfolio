@@ -7,6 +7,12 @@
 import Main_character
 import section4
 
+def restart():
+    endgame=input("Do you want to Restart? \n Y/N")
+    if endgame == "Y":
+        start()
+    else:
+        exit()
 
 
 #Start of section 3 with def
@@ -37,6 +43,7 @@ def start():
             print("He chooses the path with a light source and finds a locked gate")
         elif choice3==2:
             print("He chooses the dark path but he finds himself at a dead end, he hears something right behind him, you are now cornered.\n Game Over")
+            restart()
 #Continue to section 4 if right choice is choosen.
         if choice3==1:
             section4.start()
