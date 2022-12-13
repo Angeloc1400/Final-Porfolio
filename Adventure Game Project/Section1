@@ -7,7 +7,12 @@
 import Main_character
 import section2
 
-
+def restart():
+    endgame=input("Do you want to Restart? \n Y/N")
+    if endgame == "Y":
+        start()
+    else:
+        exit()
 # Text for the user
 #Will start next section with def.
 def start():
@@ -26,11 +31,13 @@ def start():
 # The user choices
     if choice1 == 1:
         print(
-            "You walked back to the same direction you came from, you figure out what was following you, and you wished you didn't as that will be your last thought.\n Game Over")
+        "You walked back to the same direction you came from, you figure out what was following you, and you wished you didn't as that will be your last thought.\n Game Over")
+        restart()
     elif choice1 == 2:
         print("Your gut tells you the best choice would be to continue the path you were taking, so you keep going. ")
     elif choice1 == 3:
         print("You choose to wait it out but quickly feel a heavy breath right on your neck. \n Game Over")
+        restart()
 #  (NOT WORKING)Main_character.character.damagetaken()
 #NOT WORKING CODE/ could not impliment lives into my code
 #    if Main_character.character.lives > 0:
