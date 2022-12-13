@@ -8,6 +8,13 @@ import Main_character
 import section3
 import random
 
+def restart():
+    endgame=input("Do you want to Restart? \n Y/N")
+    if endgame == "Y":
+        start()
+    else:
+        exit()
+
 
 #Section 2 start with def.
 def start():
@@ -31,8 +38,10 @@ def start():
 #Users choices
     if choice2==1:
         print("As you walked towards the light you see a locked gate with a tourch on the other side of it,\n but all of the sudden you hear heavy footsteps going straight towards you with no where to run or hide.\n Game Over")
+        restart()
     elif choice2==2:
         print("As you continue to walk on this dark path, you find out it's a death end, so you decide to turn around and walk back. \n But all of a sudden you run into something 3 times your size\n Game Over")
+        restart()
  #NOT WORKING CODE       Main_character.damagetaken()
     elif choice2==3:
         print("As you continue to go on this path you find a open room and finds some keys in the room. \n Now you decide to go back to where the other paths are at")
