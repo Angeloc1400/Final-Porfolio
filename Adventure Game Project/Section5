@@ -42,4 +42,5 @@ def start():
             restart()
         elif choice5==3:
             print("You hide between the crevice \nThe creature keeps on running past you into the forest \nYou wait until its safe to go \nYou've escaped!")
+            exit()
 
